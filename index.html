@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Pixi</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="name" contenteditable="true">Untitled</h1>
+        </header>
+        <main>
+            <div id="edit">
+                <div class="form-group">
+                    <label for="color-input">#</label>
+                    <input value="000000" id="color-input" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="color-grabber">Color Grabber</label>
+                    <input value="000000" id="color-grabber" type="checkbox" />
+                </div>
+                <div class="form-group">
+                    <div id="color"></div>
+                </div>
+                <div class="form-group">
+                    <button id="toggle-gridlines">Toggle Gridlines</button>
+                </div>
+                <div class="form-group">
+                    <button id="export">Export to PNG</button>
+                </div>
+                <div class="form-group">
+                    <button id="save">Save</button>
+                </div>
+                <div class="form-group">
+                    <button id="open">Open</button>
+                </div>
+            </div>
+            <div id="grid"></div>
+        </main>
+    </body>
+
+    <script src="./script.js"></script>
+</html>
