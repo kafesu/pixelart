@@ -98,13 +98,13 @@ async function saveImage() {
     const image = [];
 
     // Taking the pixels so we can store the values 
-    const pixels = document.getElementsByClassName("cell")
+    const pixels = document.getElementsByClassName("cell");
 
     // Taking the background color of each pixel and storing it
     for (let i = 0; i < pixels.length; i ++) {
 
         // Convert pixel background color in rgb(r, g, b) format to hex and storing it
-        image.push(rgbToHex(pixels[index].style.backgroundColor) + ( i < 255 ? "," : ""));
+        image.push(rgbToHex(pixels[i].style.backgroundColor) + ( i < 255 ? "," : ""));
     }
 
     // Creating a BLOB to write to the file
